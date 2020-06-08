@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>Car Showroom:</h1>
+
+    <div id="carWrapper"></div>
+
+    <script src="json/cars.json"></script>
+    <script>
+        const carHolder = document.getElementById("carWrapper");
+
+        const carArr = JSON.parse(cars);
+        console.table(carArr); 
+
+        for (car of carArr.cars){
+
+            let mask = "";
+            let sold = "";
+
+            if (car.sold == true){
+                    mask = "filter: brightness(50%)";
+                } else {
+                    mask = "filter: brightness(100%)";
+            }
+
+            if (car.sold == true){
+                    sold = "Sold";
+                } else {
+                    sold = "Available";
+            }
+
+            carHolder.innerHTML += `
+                <div style="${mask}">
+                    <img src="${car.thumb}"></img>
+                    <p>${car.name}</p>
+                    <p>${car.year}</p>
+                    <p>€${car.price}</p>
+                    <p>${car.color}</p>
+                    <p>${sold}</p>
+                </div>`
+        }
+    </script>
+</body>
+</html>
