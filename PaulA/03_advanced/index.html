@@ -6,6 +6,13 @@
 		table{
 			width: 100%
 		}
+		th {
+			width: 25vw;
+		}
+		img{
+			margin: 5% 0;
+			max-height: 25vh;
+		}
 	</style>
 </head>
 <body>
@@ -14,26 +21,41 @@
 		let books = JSON.parse(data);
 		console.log(books);
 
-		let table = "<table id=\"booktable\"><tr><th>Title</th><th>Author</th><th>read</th></tr></table>"
+		let table = "<table id=\"booktable\"><tr><th>Image</th><th>Title</th><th>Author</th><th>read</th></tr></table>"
 		document.write(table)
 
 		let gettable = document.querySelector("#booktable");
 
+
+
 		for (book of books) {
+			let isRead = "";
+			let imgisRead ="";
+			if (book.read == true){
+				isRead = `background-color: green`;
+				imgisRead = `opacity: 1`;
+			} else {
+				isRead = `background-color: red`;
+				imgisRead = `opacity: 0.5`;
+			}
+
 			gettable.innerHTML +=
 						`<tr>
+							<th> <img style="${imgisRead}" src="${book.image}"</th>
 							<th>${book.title}</th>
 			  				<th>${book.author}</th>
-							<th class="read">${book.read}</th>
+							<th style="${isRead}">${book.read}</th>
 						</tr>`
 					console.log(book.read)
-		
-			if (book.read == true) {
-							document.getElementsByClassName(".read").style.backgroundColor = "green";
-						} else {
-							document.getElementsByClassName(".read").style.backgroundColor = "red";
-						}
+
 		}
+		/*
+		if (book.read == true) {
+							document.querySelectorAll(".read").style.backgroundColor = "green";
+						} else if (book.read == false) {
+							document.querySelectorAll(".read").style.backgroundColor = "red";
+						}
+						*/
 
 
 

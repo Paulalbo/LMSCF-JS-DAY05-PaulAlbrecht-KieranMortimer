@@ -1,12 +1,15 @@
 data =`[{
+    "image" : "https://qph.fs.quoracdn.net/main-qimg-4b88f7403fc74f6712b173eb5ee6e9af.webp",
     "title" : "Book 01",
     "author" : "Paul",
     "read" : false
 },{
+    "image" : "https://media.geeksforgeeks.org/wp-content/uploads/20190814094403/html-and-css.jpg",
     "title" : "Book 02",
     "author" : "Paul",
     "read" : true
 },{
+    "image" : "https://i.pinimg.com/originals/1a/f5/9d/1af59dc35bded0c716f983f86370888e.jpg",
     "title" : "Book 03",
     "author" : "Paul",
     "read" : false
