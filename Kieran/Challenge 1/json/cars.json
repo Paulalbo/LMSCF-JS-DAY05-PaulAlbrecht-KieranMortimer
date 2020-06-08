@@ -1,0 +1,73 @@
+var cars = `{
+    "cars": [
+        {
+            "id": 1,
+            "name": "Kia Sedona",
+            "year": "2019",
+            "thumb": "img/1.jpg",
+            "price": 27600,
+            "color": "red",
+            "sold": false
+        },
+
+        {
+            "id": 2,
+            "name": "Crysler Pacifica",
+            "year": "2016",
+            "thumb": "img/2.png",
+            "price": 39995,
+            "color": "grey",
+            "sold": true
+        },
+
+        {
+            "id": 3,
+            "name": "Honda Odyssey",
+            "year": "2012",
+            "thumb": "img/3.jpg",
+            "price": 30790,
+            "color": "blue",
+            "sold": false
+        },
+
+        {
+            "id": 4,
+            "name": "Toyota Sienna",
+            "year": "2018",
+            "thumb": "img/4.jpg",
+            "price": 31640,
+            "color": "red",
+            "sold": false
+        },
+
+        {
+            "id": 5,
+            "name": "Volkswagen Atlas",
+            "year": "2020",
+            "thumb": "img/5.jpg",
+            "price": 31545,
+            "color": "steel blue",
+            "sold": false
+        },
+
+        {
+            "id": 6,
+            "name": "Toyota Highlander",
+            "year": "2020",
+            "thumb": "img/6.jpg",
+            "price": 34600,
+            "color": "green",
+            "sold": true
+        },
+
+        {
+            "id": 7,
+            "name": "Subaru Ascent",
+            "year": "2016",
+            "thumb": "img/7.jpg",
+            "price": 31995,
+            "color": "red",
+            "sold": true
+        }
+    ]
+}`
