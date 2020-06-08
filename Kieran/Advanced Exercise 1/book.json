@@ -1,0 +1,30 @@
+var library = `{ 
+    "books": [
+        {"title": "Javascript for Dummies",
+        "author": "Dummy Dumb Dumb",
+        "read": false,
+        "thumb": "dummies.jpg"
+        },
+
+        {
+        "title": "Cracking codes in python",
+        "author": "Dummy Dumb Dumb",
+        "read": true,
+        "thumb": "codesPy.png"
+        },
+
+        {
+        "title": "Hacking Secret codes with python",
+        "author": "Dummy Dumb Dumb",
+        "read": true,
+        "thumb": "hackingpy.jpg"
+        },
+
+        {
+        "title": "css cookbook",
+        "author": "Dummy Dumb Dumb",
+        "read": false,
+        "thumb": "css.jpg"    
+        }
+    ]   
+}`

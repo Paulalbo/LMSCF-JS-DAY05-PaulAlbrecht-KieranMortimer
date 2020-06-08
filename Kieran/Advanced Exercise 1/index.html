@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv. 1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script type="text/javascript" src="book.json"></script>
+    <script>
+        let bookArr = JSON.parse(library);
+        console.log(bookArr.books[0]);
+
+        document.write(`
+            <ul id="bookList"></ul>
+        `);
+
+        for (book of bookArr.books){
+            let mask = "";
+
+            if (book.read == false){
+                mask = "filter: brightness(50%)";
+            } else {
+                mask = "filter: brightness(100%";
+            }
+            
+            document.getElementById("bookList").innerHTML +=
+                `<li>
+                    <img src="img/${book.thumb}" style="${mask}"></img>
+                    <p>
+                        ${book.title} : ${book.author}
+                    </p>
+                </li>`;
+        }
+    </script>
+</body>
+</html>

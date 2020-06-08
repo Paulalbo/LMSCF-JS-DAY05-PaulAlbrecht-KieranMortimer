@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate 1</title>
+</head>
+<body>
+    <script>
+        let employees = [
+            {"uniqueID": 1,
+            "firstName": "Ted",
+            "lastName": "Smith",
+            "email": "123@test.com",
+            "jobTitle": "coffee runner",
+            "Salary": 2000},
+
+            {"uniqueID": 2,
+            "firstName": "John",
+            "lastName": "Cowel",
+            "email": "123@test.com",
+            "jobTitle": "Manager",
+            "Salary": 5000},
+
+            {"uniqueID": 3,
+            "firstName": "Carol",
+            "lastName": "Hunt",
+            "email": "123456@test.com",
+            "jobTitle": "programmer",
+            "Salary": 3000},
+
+            {"uniqueID": 4,
+            "firstName": "Jeb",
+            "lastName": "Dunn",
+            "email": "j.dunn@test.com",
+            "jobTitle": "QA",
+            "Salary": 3000},
+
+            {"uniqueID": 5,
+            "firstName": "Sophie",
+            "lastName": "Tunt",
+            "email": "s.tunt@test.com",
+            "jobTitle": "Dev Ops",
+            "Salary": 4000},
+
+            {"uniqueID": 6,
+            "firstName": "Jan",
+            "lastName": "Fisher",
+            "email": "j.fisher@test.com",
+            "jobTitle": "Secretary",
+            "Salary": 2500},
+
+            {"uniqueID": 7,
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "email": "j.doe@test.com",
+            "jobTitle": "marketing",
+            "Salary": 4000},
+
+            {"uniqueID": 8,
+            "firstName": "Tony",
+            "lastName": "Kellog",
+            "email": "t.kellog@test.com",
+            "jobTitle": "Media",
+            "Salary": 3000},
+
+            {"uniqueID": 9,
+            "firstName": "Shaun",
+            "lastName": "Howards",
+            "email": "s.howards@test.com",
+            "jobTitle": "Intern",
+            "Salary": 1500},
+
+            {"uniqueID": 10,
+            "firstName": "Holly",
+            "lastName": "Tennant",
+            "email": "h.tennant@test.com",
+            "jobTitle": "HR",
+            "Salary": 3000}
+        ]
+
+        document.write(`
+            <table id="employeeTable" style="width:100%">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Title</th>
+                    <th>Salary</th>
+                </tr>
+            </table>
+        `);
+
+        const table = document.getElementById("employeeTable");
+
+        for (employee of employees){
+            table.innerHTML += `
+                <tr>
+                    <th>${employee.uniqueID}</th>
+                    <th>${employee.firstName}</th>
+                    <th>${employee.lastName}</th>
+                    <th>${employee.email}</th>
+                    <th>${employee.jobTitle}</th>
+                    <th>${employee.Salary}</th>
+                </tr>`
+        }
+    </script>
+</body>
+</html>

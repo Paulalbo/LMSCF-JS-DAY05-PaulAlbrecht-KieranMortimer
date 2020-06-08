@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let sandwiches = `{ "sandwich": "hamburger", "calories": "260" }`;
+
+        let fries = `{ "fries_size": "Large French Fries", "calories": "570" }`;
+
+        sandwiches = JSON.parse(sandwiches);
+        fries = JSON.parse(fries);
+
+        document.write(`My favourite sandwich is a ${sandwiches.sandwich} which is approximately ${sandwiches.calories}, along with it I endjoy eating ${fries.freis_size} wich have about ${fries.calories} calories`);
+
+
+    </script>
+</body>
+</html>
