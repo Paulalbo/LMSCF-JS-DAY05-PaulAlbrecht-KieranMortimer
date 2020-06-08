@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script  type="text/javascript" src="data.json" ></script>
+	<script>
+		let mydata = JSON.parse(data);
+		console.log(mydata);
+		let empl1 = 0
+		let empl2 = empl1 + 1
+
+
+		document.write(`
+		 				<table>
+		 					<tr>
+								<td>First Name</td>
+							 	<td>${mydata[empl1].FirstName}</td>
+							</tr>
+							<tr>
+								<td>Last Name</td>
+							 	<td>${mydata[empl1].LastName}</td>
+							</tr>
+							<tr>
+								<td>E-Mail</td>
+							 	<td>${mydata[empl1].Email}</td>
+							</tr>
+							<tr>
+								<td>Job Title</td>
+							 	<td>${mydata[empl1].JobTitle}</td>
+							</tr>
+							<tr>
+								<td>Salary</td>
+							 	<td>${mydata[empl1].Salary}</td>
+							</tr>
+						</table>`
+						);
+						document.write("<hr>")
+						document.write(`
+		 				<table>
+		 					<tr>
+								<td>First Name</td>
+							 	<td>${mydata[empl2].FirstName}</td>
+							</tr>
+							<tr>
+								<td>Last Name</td>
+							 	<td>${mydata[empl2].LastName}</td>
+							</tr>
+							<tr>
+								<td>E-Mail</td>
+							 	<td>${mydata[empl2].Email}</td>
+							</tr>
+							<tr>
+								<td>Job Title</td>
+							 	<td>${mydata[empl2].JobTitle}</td>
+							</tr>
+							<tr>
+								<td>Salary</td>
+							 	<td>${mydata[empl2].Salary}</td>
+							</tr>
+						</table>`
+						);
+		 
+	</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+data =`[{
+    "title" : "Book 01",
+    "author" : "Paul",
+    "read" : false
+},{
+    "title" : "Book 02",
+    "author" : "Paul",
+    "read" : true
+},{
+    "title" : "Book 03",
+    "author" : "Paul",
+    "read" : false
+    }
+]`;

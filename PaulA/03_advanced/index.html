@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table{
+			width: 100%
+		}
+	</style>
+</head>
+<body>
+	<script  type="text/javascript" src="data.json" ></script>
+	<script>
+		let books = JSON.parse(data);
+		console.log(books);
+
+		let table = "<table id=\"booktable\"><tr><th>Title</th><th>Author</th><th>read</th></tr></table>"
+		document.write(table)
+
+		let gettable = document.querySelector("#booktable");
+
+		for (book of books) {
+			gettable.innerHTML +=
+						`<tr>
+							<th>${book.title}</th>
+			  				<th>${book.author}</th>
+							<th class="read">${book.read}</th>
+						</tr>`
+					console.log(book.read)
+		
+			if (book.read == true) {
+							document.getElementsByClassName(".read").style.backgroundColor = "green";
+						} else {
+							document.getElementsByClassName(".read").style.backgroundColor = "red";
+						}
+		}
+
+
+
+
+
+		 
+	</script>
+</body>
+</html>

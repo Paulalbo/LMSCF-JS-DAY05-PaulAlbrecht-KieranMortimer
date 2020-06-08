@@ -1,0 +1,15 @@
+data =`[{
+    "UniqueID" : "01",
+    "FirstName" : "Paul",
+    "LastName" : "Albrecht",
+    "Email" : "paul-albrecht@gmx.at",
+    "JobTitle" : "Developer",
+    "Salary" : "3000"
+},{
+    "UniqueID" : "02",
+    "FirstName" : "test",
+    "LastName" : "test",
+    "Email" : "test@gmx.at",
+    "JobTitle" : "Developer",
+    "Salary" : "2600"
+}]`;
